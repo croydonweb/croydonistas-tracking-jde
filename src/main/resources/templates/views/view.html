@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/template::head">
+
+</head>
+<body>
+	<div class="container pt-5">
+		<h3 th:text="${'No. de Guia: '+tracking.documentVoucherInvoiceetc}"></h3>
+	<h3
+		th:text="${'No. de Factura: '+tracking.orderType+'-'+tracking.documentOrderNoInvoiceetc}"></h3>
+	<h3 th:text="${'Estado: '+tracking.numerodeGuia}"></h3>
+	<ul class="steps m-3">
+		<li class="step step-success">
+			<div class="step-content">
+				<span class="step-circle">1</span> <span
+					class="step-text text-center" th:text="${tracking.description}"></span>
+			</div>
+		</li>
+		<li class="step step-success">
+			<div class="step-content">
+				<span class="step-circle">2</span> <span
+					class="step-text text-center" th:text="${tracking.description02}"></span>
+			</div>
+		</li>
+		<li class="step">
+			<div class="step-content">
+				<span class="step-circle bg-primary">3</span> <span
+					class="step-text text-primary text-center"
+					th:text="${tracking.description11}"></span>
+			</div>
+		</li>
+	</ul>
+	</div>
+</body>
+<th:block th:insert="fragments/template::scripts">
+
+</th:block>
+</html>

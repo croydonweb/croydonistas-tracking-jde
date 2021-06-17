@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://172.16.26.9:6089/PY920/EstadoOrdenManagerService?WSDL" uri="wsdl/172.16.26.9_6089/PY920/EstadoOrdenManagerService.wsdl"/>
+    <system systemId="http://172.16.26.9:6089/PY920/EstadoOrdenManagerService?xsd=1" uri="wsdl/172.16.26.9_6089/PY920/EstadoOrdenManagerService.xsd_1.xsd"/>
+</catalog>

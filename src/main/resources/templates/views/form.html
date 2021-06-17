@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/template::head">
+
+    </head>
+    <body>
+        <form class="m-4" th:action="@{/tracking/}" th:object="${tracking}" method="get">  
+            <div class="row">
+                <div class="col">
+                    <label for="addressNumber">AN8</label>
+                    <input type="text" class="form-control" th:field="*{addressNumber}">
+                </div>
+                <div class="col">
+                    <label for="addressNumber">Tipo de Orden</label>
+                    <input type="text" class="form-control" th:field="*{orderType}">
+                </div>
+                <div class="col">
+                    <label for="documentOrderNoInvoiceetc">Numero de Orden</label>
+                    <input type="text" class="form-control" th:field="*{documentOrderNoInvoiceetc}">
+                </div>
+                <div class="col">
+                    <input class="btn btn-primary mt-4" type="submit" value="Consultar">
+                </div>
+            </div>
+        </form>
+    </body>
+    <th:block th:insert="fragments/template::scripts">
+
+    </th:block>
+</html>
